@@ -1,0 +1,17 @@
+
+#popup.form-callback.mfp-hide
+    form#form_pop_callback.form__content(name="обратный звонок")
+            .title_form Заказать обратный<br> звонок
+            .form__control
+                input(placeholder="Имя")
+            .form__control
+                input(placeholder="Телефон" name="phone")
+            button.btn.btn_form.js-sent(type="") Получить  цену
+            .form-disclaimer Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных в соответствии с
+                a(href="https://travel-times.ru/agreement.html", rel="nofollow", target="_blank")  Политикой конфиденциальности
+
+#sucess.sent.mfp-hide
+    .sent__title Спасибо!
+    span Ваша заявка отправлена! Наш менеджер свяжется с вами в ближайшее время
+    img(src='./static/img/general/balloons.svg').sent__img
+

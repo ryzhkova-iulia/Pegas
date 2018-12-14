@@ -1,0 +1,26 @@
+footer
+    .content
+        .footer
+            .copyright
+                span © 2017 Anex Tour | Все права защищены
+                a(href="tel:+74951627503").footer_tel +7 (495) 162-75-03
+
+            ul.menu_footer
+                li
+                    a(href="#search") Поиск тура
+                li
+                    a(href="#hot") Горящие предложения
+                li
+                    a(href="#specialist") Подбор с профессионалом
+                li
+                    a(href="#map") Контакты
+
+script(type="html/template" id="tooltip-template")
+    .tooltip
+        .tooltip-block
+            a(href="tel:#phone#").footer_tel #phone#
+            .tooltip__info
+                span #address#
+                span #subAddress#
+                span #workingHours#
+            button.btn.btn_form.js-callback Обратный звонок

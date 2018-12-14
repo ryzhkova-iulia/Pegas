@@ -1,0 +1,227 @@
+extends ../layout/main
+
+block title
+    | Pegas
+
+block content
+    .container.container_blue
+        .content
+            .menu
+                a(href="#search").menu__item Поиск тура
+                a(href="#hot").menu__item Горящие предложения
+                a(href="#specialist").menu__item Подбор со специалистом
+                a(href="#map").menu__item Контакты
+
+    .container#search
+
+    .container.container_holland
+        .content.content_bg-road
+            .block-form
+                form.form
+                    .form__control
+                        input(placeholder="Имя")
+                    .form__control
+                        input(placeholder="Телефон" name="phone")
+                    .form__control
+                        input(placeholder="E-mail")
+                    button.btn.btn_form(type="submit") Подобрать тур
+                .title-form Туры
+                    nobr в Голландию
+
+    .container#hot
+        .content
+            .title Подборка горящих предложений
+
+    .container
+        .content
+            .choose-tour
+                img(src="./static/img/content/island.png").choose-tour__img
+                img(src="./static/img/content/island768.png").choose-tour__img768
+                .block-form
+                    form.form
+                        .title Подобрать тур <br>с профессионалом
+                        .form__control
+                            input(placeholder="Имя")
+                        .form__control
+                            input(placeholder="Телефон" name="phone")
+                        .form__control
+                            input(placeholder="E-mail")
+                        button.btn.btn_form(type="submit") Подобрать тур
+
+    .container
+        .title Страны
+        ul.coutry
+            li
+                img(src="./static/img/content/country.png")
+                a(href="#") Австрия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Армения
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Белорусь
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Бельгия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Болгария
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Венгрия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Вьетнам
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Германия
+
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Греция
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Грузия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Дания
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Доминикана
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Египет
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Израиль
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Индия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Индонезия
+
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Ирландия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Исландия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Испания
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Италия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Кипр
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Китай
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Куба
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Маврикий
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Малайзия
+
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Мальдивы
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Мальта
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Мексика
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Нидерланды
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Норвегия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") ОАЭ
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Португалия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Россия
+
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Сейшелы
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Словакия
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Словения
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") США
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Тайланд
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Тунис
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Турция
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Узбекистан
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Финляндия
+
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Филлипины
+            li
+                img(src="./static/img/content/country.png")
+                a(href="") Франция
+
+
+    .container
+        .content
+            .text
+                p Греция - древнейшая страна с богатой античной культурой. Туры в Грецию из Москвы, всегда пользовались популярностью среди иностранных туристов. Сюда приезжают, чтобы посетить руины величественных городов древности и насладиться пейзажами песчаных пляжей. Туры в Грецию не зря пользуются популярностью у туристов. При относительно невысоких ценах на путевки, в Греции вас ждет настоящий европейский сервис, отменная кухня и множество достопримечательностей.
+
+                p Греция расположилась в южной части европейского континента. Большая часть жителей исповедуют православие. Страна занимает территорию на Балканском полуострове и большом количестве мелких и крупных островов, поэтому со многих сторон омывается разными морями: с востока – Эгейским и Фракийским; с запада – Ионическим; с юга – Критским и Средиземным.
+
+                p Туры в Грецию – одно из популярных в России и мире туристических направлений, объединяющих все преимущества. Сочетание развитой культуры, приятного климата, уникальной кухни, богатой истории и возможности шопинга сделали эту страну одной из самых посещаемых
+
+    .container.container_blue.form-tour#specialist
+        .content
+            .title Подобрать тур с профессионалом
+            form.form
+                .form__control
+                    input(placeholder="Имя")
+                .form__control
+                    input(placeholder="Телефон" name="phone")
+                .form__control
+                    input(placeholder="E-mail")
+                button.btn.btn_form(type="submit") Подобрать тур
+
+    .container.content_position
+        .tooltip
+            .tooltip-block
+                a(href="tel:+74951625607").footer_tel +7 (495) 162-56-07
+                .tooltip__info
+                    span Зубовский б-р, д.13 стр 1
+                    span Парк Культуры,<br> Фрунзенская, Октябрьская
+                    span Пн-Пт: 10:00-20:00 <br>Сб: 11:00-16-00
+                button.btn.btn_form.js-callback Обратный звонок
+        section#map
+
+
+
+    include ../modules/callback

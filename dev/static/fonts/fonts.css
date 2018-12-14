@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Semibold.eot');
+    src: url('SFUIText-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('SFUIText-Semibold.woff') format('woff'),
+    url('SFUIText-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF UI DisplaySemibold';
+    src: url('SFUIDisplay-Semibold.woff2') format('woff2'),
+    url('SFUIDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFNS Display';
+    src: url('HelveticaNeueDeskInterface-Regular.woff2') format('woff2'),
+    url('HelveticaNeueDeskInterface-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI DisplayBlack';
+    src: url('SFUIDisplay-Black.woff2') format('woff2'),
+    url('SFUIDisplay-Black.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI  Text';
+    src: url('SFUIText-Regular.eot');
+    src: url('SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+    url('SFUIText-Regular.woff') format('woff'),
+    url('SFUIText-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Medium.eot');
+    src: url('SFUIText-Medium.eot?#iefix') format('embedded-opentype'),
+    url('SFUIText-Medium.woff') format('woff'),
+    url('SFUIText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('SFUIDisplay-Medium.eot');
+    src: url('SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+    url('SFUIDisplay-Medium.woff') format('woff'),
+    url('SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

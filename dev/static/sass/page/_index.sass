@@ -1,0 +1,180 @@
+.menu
+  padding: 12px 0
+  +flexBlockRow
+  width: 100%
+  max-width: 645px
+  margin: auto
+  +font-size(14px)
+  &__item
+    font-weight: 500
+    color: #2a2a2a
+    cursor: pointer
+
+.title-form
+  +font-size(55px)
+  color: #FFFFFF
+  font-family: 'SF UI DisplayBlack'
+  text-align: right
+  margin-right: 45px
+
+.block-form
+  +flexBlockRow
+
+.form
+  background-color: rgba(0, 0, 0, 0.29)
+  +flexBlockColumn
+  padding: 68px 32px 85px 32px
+  &__control
+    margin-bottom: 7px
+    input
+      background-color: transparent
+      border: 1px solid #d2d2d2
+      padding: 12px 17px
+      &::placeholder
+        color: #d2d2d2
+        +font-size(16px)
+  .btn
+    width: 100%
+    font-family: 'SF UI DisplaySemibold'
+.title
+  width: 100%
+  text-align: center
+  +font-size(23px)
+  font-weight: 600
+  font-family: 'SF UI DisplaySemibold'
+  margin: 40px 0 30px
+  color: #3a3a3a
+
+.choose-tour
+  width: 100%
+  +flexBlockRow
+  background-color: #c6eaff
+  &__img768
+    display: none
+  img
+    width: 100%
+    max-width: 65%
+  .block-form
+    width: 35%
+  .form
+    background-color: transparent
+    padding: 0
+    width: 100%
+  .title
+    margin-bottom: 30px
+    margin-top: 0
+  .form__control input
+    background-color: #FFFFFF
+    width: 305px
+    border: none
+    &::placeholder
+      color: #5c5c5c
+  .btn
+    max-width: 230px
+    margin-top: 35px
+    +font-size(18px)
+
+
+.coutry
+  width: 100%
+  max-width: 1100px
+  margin: auto
+  margin-bottom: 50px
+  column-count: 6
+  padding-left: 20px
+  li
+    width: 193px
+    font-weight: 600
+    +font-size(15px)
+    color: #3e4758
+    display: inline-block
+    cursor: pointer
+    margin-bottom: 8px
+    line-height: 1
+    a
+      font-weight: 600
+      line-height: 1
+      +font-size(15px)
+      color: #3e4758
+    img
+      width: 17px
+      height: 11px
+      margin-right: 15px
+
+.text
+  margin-bottom: 70px
+  padding: 0 15px
+  p
+    line-height: 1.2em
+    font-family: 'SF UI Display'
+    text-align: center
+    margin-top: 30px
+
+.form-tour
+  padding: 37px 0 56px
+  .title
+    margin-top: 0
+  .form
+    background-color: transparent
+    width: 100%
+    flex-direction: row
+    padding: 0 20px
+  .form__control
+    margin-bottom: 0
+    width: 25%
+    input
+      background-color: #FFFFFF
+      border: none
+      border-left: 1px solid #c6eaff
+      width: 100%
+      &::placeholder
+        color: #5c5c5c
+  .btn
+    padding: 13px
+    max-width: 25%
+
+#map
+  width: 65%
+  height: 457px
+.tooltip-block
+  text-align: center
+
+.tooltip
+  text-align: left
+  margin: 20px 0
+  margin-left: 25px
+  .footer_tel
+    color: #3a3a3a
+    text-align: left
+    +font-size(26px)
+    display: block
+    width: 100%
+    font-family: 'SF UI DisplaySemibold'
+  &__info
+    margin: auto
+    margin-top: 15px
+    width: 100%
+    +font-size(17px)
+    color: #3b444e
+    text-align: left
+    span
+      margin-bottom: 14px
+      display: block
+  .btn
+    margin: 35px auto 0
+    width: 100%
+
+.tooltip
+  //width: 35%
+  //max-width: 380px
+  height: 100%
+  background-color: #FFFFFF
+  margin: 0
+  +flexBlockColumn
+  justify-content: center
+
+.container_holland
+  .block-form
+    align-items: flex-end
+  .title-form
+    margin-bottom: 50px

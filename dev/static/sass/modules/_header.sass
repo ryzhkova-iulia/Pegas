@@ -1,0 +1,43 @@
+header
+  width: 100%
+  padding: 9px 0 12px 0
+  .content
+    +flexBlockRow
+.logo
+  width: 206px
+
+.block-info
+  display: none
+
+.info
+  font-weight: 500
+  font-family: 'SF UI Display'
+  +font-size(14px)
+  &__schedule
+    color: #2a2b3e
+  &__link
+    color: #2a2b3e
+    display: block
+    margin-top: 5px
+
+.telephone
+  +flexBlockColumn
+  align-items: flex-start
+  +font-size(14px)
+  &__info
+    color: $mainBlue
+    line-height: normal
+  &__link
+    +font-size(18px)
+    font-weight: bold
+
+.info
+  +flexBlockColumn
+  align-items: flex-start
+  &__schedule
+    font-weight: 500
+    +font-size(14px)
+  a
+    +font-size(14px)
+    color: $mainBlue
+    line-height: normal
