@@ -27,6 +27,10 @@ ymaps.ready().then(function () {
         // Запретим появление балуна.
         hasBalloon: false,
         iconColor: '#3b5998',
+        iconLayout: 'default#image',
+        iconImageHref: "./static/img/general/point.svg",
+        iconImageSize: [30, 42],
+        iconImageOffset: [-5, -38]
     });
 
     // Добавим геообъекты в коллекцию.
