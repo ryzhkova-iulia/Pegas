@@ -1129,8 +1129,8 @@ button {
 .btn {
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   background-color: #4595ff;
   cursor: pointer;
@@ -1148,8 +1148,7 @@ button {
     background-color: #FFFFFF;
     border: 4px solid #4595ff; }
     .btn_white:hover {
-      color: #FFFFFF;
-      border-color: #2172de; }
+      background-color: #FFFFFF; }
 
 header {
   width: 100%;
@@ -1172,7 +1171,8 @@ header {
   font-size: 14px;
   font-size: 0.875rem; }
   .info__schedule {
-    color: #2a2b3e; }
+    color: #2a2b3e;
+    font-weight: 500; }
   .info__link {
     color: #2a2b3e;
     display: block;
@@ -1192,7 +1192,7 @@ header {
   .telephone__link {
     font-size: 18px;
     font-size: 1.125rem;
-    font-weight: bold; }
+    font-weight: 900; }
 
 .info {
   display: flex;
@@ -1365,16 +1365,23 @@ header {
     max-width: 25%; }
 
 #map {
-  width: 65%;
+  width: 70%;
   height: 457px; }
 
 .tooltip-block {
-  text-align: center; }
+  text-align: center;
+  max-width: 240px; }
 
 .tooltip {
   text-align: left;
-  margin: 20px 0;
-  margin-left: 25px; }
+  height: 100%;
+  padding: 40px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start; }
   .tooltip .footer_tel {
     color: #3a3a3a;
     text-align: left;
@@ -1392,27 +1399,22 @@ header {
     color: #3b444e;
     text-align: left; }
     .tooltip__info span {
-      margin-bottom: 14px;
-      display: block; }
+      margin-bottom: 16px;
+      display: block;
+      line-height: 18px; }
   .tooltip .btn {
     margin: 35px auto 0;
-    width: 100%; }
-
-.tooltip {
-  height: 100%;
-  background-color: #FFFFFF;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center; }
+    width: 100%;
+    max-width: 100%; }
 
 .container_holland .block-form {
   align-items: flex-end; }
 
 .container_holland .title-form {
   margin-bottom: 50px; }
+
+.map-tooltip-container {
+  width: 30%; }
 
 footer {
   background-color: #848c96;
@@ -1851,7 +1853,11 @@ footer {
     width: 40%; }
   .coutry {
     column-count: 5;
-    padding-left: 60px; } }
+    padding-left: 60px; }
+  .map-tooltip-container {
+    width: 40%; }
+  #map {
+    width: 60%; } }
 
 @media screen and (max-width: 910px) {
   .btn_white {
@@ -1905,8 +1911,15 @@ footer {
     max-width: 450px; }
   .footer {
     margin-bottom: 25px; }
+  .map-tooltip-container {
+    width: 45%; }
+  #map {
+    width: 55%;
+    height: 313px; }
   .tooltip {
-    width: 45%; } }
+    padding: 0 40px; }
+    .tooltip .btn {
+      margin-top: 20px; } }
 
 @media screen and (max-width: 730px) {
   .footer {
@@ -1987,15 +2000,22 @@ footer {
   .tooltip {
     width: 100%;
     max-width: 100%;
-    position: static; }
+    position: static;
+    padding: 20px;
+    align-items: center; }
     .tooltip .btn {
       margin: 15px auto 25px; }
     .tooltip .footer_tel {
-      margin-top: 25px; }
+      margin-top: 25px;
+      text-align: center; }
   .tooltip__info {
     text-align: center; }
   .container_holland .title-form {
-    max-width: 250px; } }
+    max-width: 250px; }
+  .map-tooltip-container {
+    width: 100%; }
+  #map {
+    width: 100%; } }
 
 @media screen and (max-width: 550px) {
   .container_holland .title-form {
