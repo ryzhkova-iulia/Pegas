@@ -21,12 +21,14 @@ ymaps.ready().then(function () {
         $(".map-tooltip-container").html($templateContent);
     }
 
+
     // Создадим коллекцию геообъектов.
     var collection = new ymaps.GeoObjectCollection(null, {
         // Запретим появление балуна.
         hasBalloon: false,
-        iconColor: '#3b5998'
+        iconColor: '#3b5998',
     });
+
     // Добавим геообъекты в коллекцию.
     collection
         .add(new ymaps.Placemark([55.733838, 37.588100], {
@@ -74,31 +76,6 @@ $(document).ready(function () {
 
     $('[name="phone"]').attr('type', 'tel');
 
-
-
-    // $('.js-callback').magnificPopup({
-    //     items: {
-    //         src: '#popup',
-    //         type: 'inline'
-    //     },
-    //
-    //     callbacks: {
-    //         elementParse: function(item) {
-    //
-    //             var mp = $.magnificPopup.instance,
-    //                 cur = mp.st.el,
-    //                 title = cur.attr('data-header'),
-    //                 curImg = cur.attr("src");
-    //
-    //             if (curImg != undefined ) {
-    //                 $( item.src).find('.form-image').attr("src", curImg);
-    //             } else {
-    //                 // $( item.src).find('.form-image').hide();
-    //             }
-    //             $( item.src).find('.title_form').text(title);
-    //         }
-    //     }
-    // });
 
     $( document ).on( 'click', '.js-callback', function(e) {
         $( '.js-callback' ).magnificPopup({

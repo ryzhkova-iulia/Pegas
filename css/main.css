@@ -1401,7 +1401,7 @@ header {
     .tooltip__info span {
       margin-bottom: 16px;
       display: block;
-      line-height: 18px; }
+      line-height: 20px; }
   .tooltip .btn {
     margin: 35px auto 0;
     width: 100%;
