@@ -1108,12 +1108,15 @@ button {
   border: 0; }
 
 .container {
-  width: 100%;
-  max-width: 1175px;
-  margin: auto;
-  background-color: #FFFFFF; }
+  width: 100%; }
   .container_blue {
     background-color: #c6eaff; }
+
+.wrapper {
+  max-width: 1175px;
+  margin: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.29); }
 
 .content {
   width: 100%;
@@ -1458,7 +1461,8 @@ footer {
   color: #FFFFFF;
   font-family: 'SF UI Display';
   font-size: 13px;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  margin-top: 76px; }
 
 .footer {
   display: flex;
@@ -1897,7 +1901,9 @@ footer {
   .choose-tour__img {
     display: none; }
   .choose-tour__img1024 {
-    display: block; } }
+    display: block; }
+  footer {
+    margin-top: 0; } }
 
 @media screen and (max-width: 910px) {
   .btn_white {
