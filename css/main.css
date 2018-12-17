@@ -1023,7 +1023,8 @@ body {
   -webkit-tap-highlight-color: transparent;
   outline: none;
   background: url("../img/content/body-bg.png") no-repeat center top;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 body {
   display: flex;
@@ -1155,9 +1156,12 @@ button {
     padding: 12px;
     color: #4595ff;
     background-color: #FFFFFF;
-    border: 4px solid #4595ff; }
+    border: 4px solid #4595ff;
+    transition: 0.2s; }
     .btn_white:hover {
-      background-color: #FFFFFF; }
+      background-color: #4595ff;
+      color: #FFFFFF;
+      transition: 0.2s; }
 
 header {
   width: 100%;
@@ -1201,6 +1205,8 @@ header {
   .telephone__info {
     color: #4595ff;
     line-height: normal; }
+    .telephone__info:hover {
+      color: #13b2ff; }
   .telephone__link {
     font-size: 18px;
     font-size: 1.125rem;
@@ -1221,6 +1227,8 @@ header {
     font-size: 0.875rem;
     color: #4595ff;
     line-height: normal; }
+    .info a:hover {
+      color: #13b2ff; }
 
 .menu {
   padding: 12px 0 14px;
@@ -1238,6 +1246,8 @@ header {
     color: #2a2a2a;
     cursor: pointer;
     line-height: normal; }
+    .menu__item:hover {
+      color: #2c6eb3; }
 
 .title-form {
   font-size: 55px;
@@ -1270,7 +1280,8 @@ header {
       border: 1px solid #d2d2d2;
       padding: 13px 17px 12px;
       width: 240px;
-      line-height: normal; }
+      line-height: normal;
+      color: #d2d2d2; }
       .form__control input::placeholder {
         color: #d2d2d2;
         font-size: 16px;
@@ -1323,7 +1334,8 @@ header {
       width: 305px;
       border: none;
       padding: 14px 18px 17px;
-      line-height: normal; }
+      line-height: normal;
+      color: #5c5c5c; }
       .choose-tour .form__control input::placeholder {
         color: #5c5c5c; }
   .choose-tour .btn {
@@ -1395,7 +1407,8 @@ header {
       border: none;
       border-left: 1px solid #c6eaff;
       width: 100%;
-      height: 50px; }
+      height: 50px;
+      color: #5c5c5c; }
       .form-tour .form__control input::placeholder {
         color: #5c5c5c; }
   .form-tour .btn {
@@ -1542,7 +1555,8 @@ footer {
     margin: auto;
     display: block;
     background-color: #FFFFFF;
-    border: none; }
+    border: none;
+    color: #5c5c5c; }
     .form-callback .form__control input::placeholder {
       color: #5c5c5c; }
   .form-callback .btn {
