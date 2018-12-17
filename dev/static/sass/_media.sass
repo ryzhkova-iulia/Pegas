@@ -21,6 +21,12 @@
     width: 40%
   #map
     width: 60%
+  .choose-tour
+    //padding: 15px 0
+    &__img
+      display: none
+    &__img1024
+      display: block
 
 
 @media screen and (max-width: 910px)
@@ -28,7 +34,8 @@
     max-width: 113px
     +font-size(12px)
     line-height: normal
-    padding: 10px
+    padding: 7px 8px
+    border-width: 3px
   header
     padding-right: 15px
     padding-left: 15px
@@ -43,6 +50,11 @@
   .container_holland .title-form
     margin-right: 20px
     max-width: 400px
+  .choose-tour
+    .title
+      margin-bottom: 15px
+    .btn
+      margin-top: 15px
 
 
 @media screen and (max-width: 768px)
@@ -51,11 +63,13 @@
   .title-form
     margin-right: 23px
     +font-size(35px)
-  .form
-    padding: 52px 23px 66px 23px
+  width: 100%
   .form__control input
     width: 185px
   .choose-tour
+    padding: 0
+    .form__control input
+      padding: 13px 17px 15px
     img
       max-width: 50%
     .block-form
@@ -64,8 +78,13 @@
       display: none
     &__img768
       display: block
+    &__img1024
+      display: none
     .btn
-      margin-top: 15px
+      margin-top: 12px
+      padding: 14px 40px 15px
+      +font-size(18px)
+      font-weight: 600
     .title
       margin-bottom: 20px
       +font-size(21px)
@@ -81,9 +100,22 @@
   .tooltip
     padding: 0 40px
     .btn
+      +font-size(15px)
       margin-top: 20px
-
-
+    &__info span
+      +font-size(14px)
+      line-height: 1.29
+    .footer_tel
+      +font-size(21px)
+      margin-top: 0
+  .text
+    margin-bottom: 50px
+    p
+      +font-size(14px)
+      line-height: 1.29
+      margin-top: 20px
+  .form-tour
+     padding-top: 0
 @media screen and (max-width: 730px)
   .footer
     flex-direction: column
@@ -109,8 +141,6 @@
       +flexBlockColumn
     .info
       align-items: flex-end
-  header .btn
-    margin-bottom: 7px
   header .content
     align-items: flex-start
   .menu
@@ -158,17 +188,69 @@
     align-items: center
     .btn
       margin: 15px auto 25px
+      width: 198px
+      +font-size(15px)
+      padding: 15px 0
+      font-weight: 600
     .footer_tel
       margin-top: 25px
       text-align: center
   .tooltip__info
     text-align: center
+  .tooltip-block
+    width: 100%
+    max-width: 100%
   .container_holland .title-form
     max-width: 250px
   .map-tooltip-container
     width: 100%
   #map
     width: 100%
+  .form-tour
+    .form__control input
+      height: 47px
+    .title
+      padding: 0
+      margin-bottom: 17px
+      +font-size(21px)
+    .form .btn
+      padding: 13px
+      +font-size(18px)
+      width: 220px
+
+@media screen and (max-width: 610px)
+  header .btn
+    margin-bottom: 7px
+    +font-size(10px)
+    padding: 7px 10px 6px
+    width: 93px
+    border-width: 3px
+  .form
+    min-width: 100%
+    height: initial
+  .block-form
+    +flexBlockColumn
+    flex-direction: column-reverse
+    background-color: rgba(0, 0, 0, 0.29)
+    padding: 24px 0 21px
+  .form .btn
+    margin-bottom: 0
+    +font-size(14px)
+    padding: 9px 35px
+    width: 185px
+    margin-top: 18px
+  .content_bg-road
+    padding: 28px 18px 30px
+    height: 344px
+  .form__control
+    margin-bottom: 5px
+    input
+      padding: 8px 13px 10px
+  .choose-tour .btn
+    width: 220px
+    padding: 13px 0
+    +font-size(18px)
+
 
 @media screen and (max-width: 550px)
   .container_holland .title-form
@@ -184,12 +266,6 @@
       margin-bottom: 7px
       &:last-child
         margin-bottom: 0
-  .block-form
-    flex-direction: column-reverse
-    background-color: rgba(0, 0, 0, 0.29)
-    padding: 24px 16px 20px
-  .content_bg-road
-    padding: 28px 20px 30px
   .form
     background-color: transparent
     padding: 0
@@ -197,9 +273,6 @@
     text-align: center
     margin-right: 0
     +font-size(22px)
-    margin-bottom: 24px
-  .form__control input
-    width: 100%
   .choose-tour .form__control input
     width: 270px
 
@@ -211,10 +284,6 @@
       align-items: flex-start
       width: 100%
       max-width: 150px
-  header .btn
-    max-width: 93px
-    padding: 10px
-    +font-size(10px)
   .coutry
     padding-left: 20px
   .logo
@@ -225,7 +294,7 @@
     margin-bottom: 5px
   .block-info
     .info
-      margin-top: -22px
+      margin-top: -17px
       max-width: 100px
     .telephone
       align-items: flex-end
@@ -239,3 +308,7 @@
     margin-top: 100px
   .sent__img
     right: 10px
+  .title
+    padding: 20px 0 15px
+    +font-size(21px)
+

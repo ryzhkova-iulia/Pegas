@@ -1,5 +1,5 @@
 .menu
-  padding: 12px 0
+  padding: 12px 0 14px
   +flexBlockRow
   width: 100%
   max-width: 645px
@@ -9,6 +9,7 @@
     font-weight: 500
     color: #2a2a2a
     cursor: pointer
+    line-height: normal
 
 .title-form
   +font-size(55px)
@@ -19,23 +20,32 @@
 
 .block-form
   +flexBlockRow
+  height: 100%
 
 .form
   background-color: rgba(0, 0, 0, 0.29)
+  min-width: 304px
   +flexBlockColumn
-  padding: 68px 32px 85px 32px
+  justify-content: center
+  //padding: 68px 32px 85px 32px
+  height: 100%
   &__control
     margin-bottom: 7px
     input
       background-color: transparent
       border: 1px solid #d2d2d2
-      padding: 12px 17px
+      padding: 13px 17px 12px
+      width: 240px
+      line-height: normal
       &::placeholder
         color: #d2d2d2
         +font-size(16px)
   .btn
     width: 100%
+    max-width: 240px
     font-family: 'SF UI DisplaySemibold'
+    margin-top: 1px
+    margin-bottom: 15px
 .title
   width: 100%
   text-align: center
@@ -44,12 +54,15 @@
   font-family: 'SF UI DisplaySemibold'
   padding: 40px 0 30px
   color: #3a3a3a
+  line-height: normal
 
 .choose-tour
   width: 100%
   +flexBlockRow
   background-color: #c6eaff
   &__img768
+    display: none
+  &__img1024
     display: none
   img
     width: 100%
@@ -63,16 +76,24 @@
   .title
     margin-bottom: 30px
     margin-top: 0
-  .form__control input
-    background-color: #FFFFFF
-    width: 305px
-    border: none
-    &::placeholder
-      color: #5c5c5c
+  .form__control
+    margin-bottom: 9px
+    input
+      background-color: #FFFFFF
+      width: 305px
+      border: none
+      padding: 14px 18px 17px
+      line-height: normal
+      &::placeholder
+        color: #5c5c5c
   .btn
     max-width: 230px
     margin-top: 35px
+    margin-bottom: 0
     +font-size(18px)
+  .title
+    +font-size(22px)
+    padding: 0
 
 
 .coutry
@@ -105,10 +126,13 @@
   margin-bottom: 70px
   padding: 0 15px
   p
-    line-height: 1.2em
-    font-family: 'SF UI Display'
+    //font-family: 'SF UI Display'
+    font-family: 'SF UI  Text'
     text-align: center
     margin-top: 30px
+    line-height: normal
+    color: #333232
+    +font-size(16px)
 
 .form-tour
   padding: 37px 0 56px
@@ -127,11 +151,13 @@
       border: none
       border-left: 1px solid #c6eaff
       width: 100%
+      height: 50px
       &::placeholder
         color: #5c5c5c
   .btn
-    padding: 13px
+    padding: 16px
     max-width: 25%
+    margin-bottom: 0
 
 #map
   width: 70%
