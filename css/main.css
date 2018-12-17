@@ -1377,7 +1377,8 @@ header {
 .form-tour {
   padding: 37px 0 56px; }
   .form-tour .title {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 0; }
   .form-tour .form {
     background-color: transparent;
     width: 100%;
