@@ -1021,7 +1021,9 @@ body {
   color: #282828;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  outline: none; }
+  outline: none;
+  background: url("../img/content/body-bg.png") no-repeat center top;
+  background-size: cover; }
 
 body {
   display: flex;
@@ -1106,7 +1108,10 @@ button {
   border: 0; }
 
 .container {
-  width: 100%; }
+  width: 100%;
+  max-width: 1175px;
+  margin: auto;
+  background-color: #FFFFFF; }
   .container_blue {
     background-color: #c6eaff; }
 
@@ -1152,7 +1157,10 @@ button {
 
 header {
   width: 100%;
-  padding: 9px 0 12px 0; }
+  padding: 9px 0 12px 0;
+  background-color: #FFFFFF;
+  max-width: 1175px;
+  margin: auto; }
   header .content {
     display: flex;
     justify-content: space-between;
@@ -1268,7 +1276,7 @@ header {
   font-size: 1.4375rem;
   font-weight: 600;
   font-family: 'SF UI DisplaySemibold';
-  margin: 40px 0 30px;
+  padding: 40px 0 30px;
   color: #3a3a3a; }
 
 .choose-tour {
